@@ -3,12 +3,14 @@
   "author": "gx1285",
   "scripts": {
     "start": "vercel dev",
-    "deploy": "vercel"
+    "deploy": "vercel",
+    "css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch"
   },
   "dependencies": {
     "hono": "^4.6.8"
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.14",
     "vercel": "^32.4.1"
   }
 }

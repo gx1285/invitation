@@ -1,12 +1,18 @@
 {
   "name": "invitation",
+  "type": "module",
   "author": "gx1285",
   "scripts": {
     "start": "vercel dev",
     "deploy": "vercel",
-    "css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch"
+    "css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch",
+    "regist": "node --env-file=.env regist.js "
   },
   "dependencies": {
+    "@discordjs/builders": "2.0.0-dev.1730030702-ed78e4570",
+    "@discordjs/rest": "^2.4.0",
+    "discord-api-types": "^0.37.103",
+    "discord-interactions": "^4.1.0",
     "hono": "^4.6.8"
   },
   "devDependencies": {
